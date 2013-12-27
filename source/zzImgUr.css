@@ -1,0 +1,235 @@
+/* 
+ * jQuery plugin zzImgUr ver 1.4 by zzbaivong
+ * http://devs.forumvi.com/ 
+ */
+ .imgur_Zzbv, .imgur_Zzbv * {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    -moz-boxsizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+.imgur_Zzbv {
+    border: 1px solid #333;
+    background: #FFF;
+    height: auto;
+}
+.imgur_Zzbv-control {
+    position:relative;
+    height:30px;
+    line-height: 30px;
+    overflow:hidden;
+    background:#333;
+    color: #FFF;
+}
+.imgur_Zzbv-preview {
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.imgur_Zzbv-li {
+    background: #f2f2f2;
+    list-style-type: none;
+    position: relative;
+    height: 68px;
+    border-top: 1px solid #DDD;
+    overflow: hidden;
+}
+.imgur_Zzbv-li:first-child {
+    border-top: 0 none;
+}
+.imgur_Zzbv-li:nth-child(2n) {
+    background: #E7E6E6;
+}
+.imgur_Zzbv-li:hover {
+    background: #007CEE;
+    color: #FFF;
+}
+.imgur_Zzbv-li.imgur_Zzbv-success {
+    background: #FFFFA1;
+}
+.imgur_Zzbv-image {
+    width: 100px;
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+}
+.imgur_Zzbv-image img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.imgur_Zzbv-info {
+    position: absolute;
+    left: 100px;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.imgur_Zzbv-dl {
+    line-height: 34px;
+}
+.imgur_Zzbv-dl > div {
+    height: 34px;
+}
+.imgur_Zzbv-dt {
+    float: left;
+    width: 90px;
+    font-weight: 300;
+    font-size: 12px;
+}
+.imgur_Zzbv input.imgur_Zzbv-input {
+    width: calc(100% - 100px)!important;
+    margin: 0!important;
+    padding: 0!important;
+    height: 16px!important;
+    line-height: 16px!important;
+}
+.imgur_Zzbv-mode {
+    cursor:pointer;
+    width:30px;
+    height:30px;
+    float:left;
+    background:url(http://i.imgur.com/QR7NC4t.png) no-repeat center center #FF475D;
+    margin-right:6px
+}
+.imgur_Zzbv-mode.imgur_Zzbv-zzURL {
+    background-image:url(http://i.imgur.com/NYMERyB.png);
+    background-color:#0B704C
+}
+.imgur_Zzbv-status {
+    position:absolute;
+    width:16px;
+    height:16px;
+    line-height: 16px;
+    left:5px;
+    top:7px;
+    display:none
+}
+.imgur_Zzbv-add {
+    cursor: pointer;
+    position: relative;
+    width: 110px;
+    height: 30px;
+    overflow: hidden;
+    background: orange;
+    border: 0;
+}
+.imgur_Zzbv-upload-URL.imgur_Zzbv-add {
+    background: #C100E6;
+}
+.imgur_Zzbv-upload-URL {
+    display:none
+}
+.imgur_Zzbv-iconSelect {
+    background: url(http://i.imgur.com/6LPQMtN.png) no-repeat center transparent;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 5px;
+    top: 0;
+}
+.imgur_Zzbv-textSelect {
+    position: absolute;
+    width: 100%;
+    padding-left: 40px;
+    height: 30px;
+    line-height: 30px;
+}
+.imgur_Zzbv-choose {
+    cursor:pointer;
+    z-index:10;
+    opacity:0;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    font-size:300px;
+    height:1000px;
+    right:0;
+    top:0;
+    position:absolute
+}
+.imgur_Zzbv-length {
+    position:absolute;
+    width:50px;
+    text-align:center;
+    top:0;
+    left:50%;
+    margin-left:-25px;
+    display:none
+}
+.imgur_Zzbv-button {
+    position:absolute;
+    right:0;
+    top:0;
+    z-index: 10;
+}
+.imgur_Zzbv-button div {
+    cursor: pointer;
+    background: url(http://i.imgur.com/voNJFfV.png) no-repeat 10px center #359BED;
+    padding: 0 10px 0 35px;
+    border: 0;
+    height: 30px;
+    display: none;
+}
+.imgur_Zzbv-button .imgur_Zzbv-reset {
+    background-image:url(http://i.imgur.com/RhNzFuh.png);
+    background-color:#01686D;
+}
+.imgur_Zzbv-mode:hover, .imgur_Zzbv-button div:hover, .imgur_Zzbv-add:hover {
+    background-color:#666;
+}
+.imgur_Zzbv-devs-icon {
+    position:absolute;
+    right:5px;
+    top:7px;
+    line-height: 16px;
+}
+.imgur_Zzbv-tip {
+    height: 24px;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 26px;
+}
+.imgur_Zzbv-tip img {
+    vertical-align: middle;
+    margin-top: -2px;
+}
+.imgur_Zzbv-wrap-progress {
+    background: #FFF;
+    height: 3px;
+    border: 0;
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+    right: 0;
+}
+.imgur_Zzbv-progress {
+    height: 3px;
+    background: red;
+    width: 1px;
+}
+.imgur_Zzbv-errorURL {
+    color:red
+}
+.imgur_Zzbv input.imgur_Zzbv-imageURL {
+    width: calc(100% - 11px)!important;
+    border: 0 none!important;
+    box-shadow: 0 0 0 1px #DDD!important;
+    margin: 0 0 0 1px!important;
+    height: 16px!important;
+    line-height: 16px!important;
+}
+.imgur_Zzbv-delete, .imgur_Zzbv-remove {
+    position:absolute;
+    right:3px;
+    top:3px;
+    height:16px;
+    width:16px;
+    text-indent:-9999px;
+    overflow:hidden;
+    background:url(http://i.imgur.com/FcXb2vi.png) no-repeat center transparent
+}
