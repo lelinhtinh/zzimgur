@@ -28,7 +28,7 @@
 				errRepeat: "URL không hợp lệ hoặc đã được sử dụng."
 			},
 			success: function (arrVal) {
-				$("textarea").val($("textarea").val() + arrVal[1]);
+				$("textarea").val($("textarea").val() + arrVal[0]);
 			},
 			input: function (arrInput) {
 				arrInput.click(function () {
@@ -36,7 +36,7 @@
 				});
 			},
 			remove: function (arrVal) {
-				$("textarea").val($("textarea").val().replace(arrVal[1], ""));
+				$("textarea").val($("textarea").val().replace(arrVal[0], ""));
 			}
 		}, options);
 		return this.each(function (index, obj) {
