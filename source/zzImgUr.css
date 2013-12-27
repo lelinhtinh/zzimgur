@@ -84,7 +84,7 @@
 }
 .imgur_Zzbv input.imgur_Zzbv-input {
     width: calc(100% - 100px)!important;
-    margin: 0!important;
+    margin: 8px 0!important;
     padding: 0!important;
     height: 16px!important;
     line-height: 16px!important;
