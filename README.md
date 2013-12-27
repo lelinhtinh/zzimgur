@@ -6,7 +6,7 @@ Upload images from ImgUr use HTML5 and Javascript
 Version 1.4 (12/27/2013)
 
 
-##Homagepage
+##Homepage
 <http://devs.forumvi.com/>
 
 ##Demo
