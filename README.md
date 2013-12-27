@@ -3,11 +3,11 @@ zzimgur
 Upload images from ImgUr use HTML5 and Javascript
 
 ###Update
-Version 1.4 (12/27/2013)
+Version 1.5 (12/27/2013)
 
 
-##Homepage
-<http://devs.forumvi.com/>
+##Guide
+<http://devs.forumvi.com/t131-jq-plugin-jquery-plugin-zzimgur>
 
 ##Demo
-<http://jsfiddle.net/baivong/d54XU/show/>
+<http://dl.dropboxusercontent.com/u/126946313/zzImgUr/demo.html>
