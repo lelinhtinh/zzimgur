@@ -28,17 +28,13 @@
                 errSize: "URL lỗi hoặc kích thước quá nhỏ.",
                 errRepeat: "URL không hợp lệ hoặc đã được sử dụng."
             },
-            success: function (arrVal) {
-                $("textarea").val($("textarea").val() + arrVal[0]);
-            },
+            success: function (firstVal, arrVal) {},
             input: function (arrInput) {
                 arrInput.click(function () {
                     this.select();
                 });
             },
-            remove: function (arrVal) {
-                $("textarea").val($("textarea").val().replace(arrVal[0], ""));
-            }
+            remove: function (firstVal, arrVal) {}
         }, options);
         return this.each(function (index, obj) {
             var maxChoose = 'multiple="multiple"',
@@ -198,7 +194,7 @@
                         $.each($(".imgur_Zzbv-input", $(thix).parent()), function (i, code) {
                             del.push(code.value);
                         });
-                        settings.remove(del);
+                        settings.remove(del[0], del);
                         $(thix).closest(".imgur_Zzbv-li").remove();
                         select_length();
                         if (complete.text() == "0") {
@@ -369,7 +365,7 @@
                     }
                     input += delBtn + '<div class="imgur_Zzbv-dl"><div class="imgur_Zzbv-dt">' + nameformat(clas) + ':</div><div class="imgur_Zzbv-dd"><input type="text" class="imgur_Zzbv-input" value="' + output + '" readonly="readonly" /></div></div>';
                 });
-                settings.success(format);
+                settings.success(format[0], format);
                 return input;
             }
 
