@@ -122,7 +122,7 @@
 .imgur_Zzbv-add {
     cursor: pointer;
     position: relative;
-    width: 110px;
+    width: 100px;
     height: 30px;
     overflow: hidden;
     background: orange;
@@ -135,17 +135,17 @@
     display:none
 }
 .imgur_Zzbv-iconSelect {
-    background: url(http://i.imgur.com/6LPQMtN.png) no-repeat center transparent;
+    background: url(http://i.imgur.com/wZNkT5b.png) no-repeat center transparent;
     width: 30px;
     height: 30px;
     position: absolute;
-    left: 5px;
+    left: 0;
     top: 0;
 }
 .imgur_Zzbv-textSelect {
     position: absolute;
     width: 100%;
-    padding-left: 40px;
+    padding-left: 30px;
     height: 30px;
     line-height: 30px;
 }
