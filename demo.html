@@ -2,65 +2,76 @@
 <html>
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<title>zzImgUr | devs.forumvi.com/</title>
-	<meta name="author" content="zzbaivong" />
-	<link rel="stylesheet" href="./source/zzImgUr.css" type="text/css" media="screen" />
-	<style>
-		body > * {
-			width: 700px;
-			margin: 0 auto;
-		}
-		#wrapper > div {
-			width: 50%;
-			float: left;
-		}
-		.test > textarea {
-			border: 1px solid #333;
-			margin: 0;
-			width: 100%;
-			min-height: 150px;
-			resize: vertical;
-		}
-		#wrapper: after {
-			content: ".";
-			display: block;
-			clear: both;
-		}
-		header,
-		footer {
-			text-align: center;
-		}
-	</style>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript" src="./source/zzImgUr.min.js"></script>
-	<script type="text/javascript">
-		$(function () {
-			$(".zzImgUr").zzImgUr({
-				cliendID: "661e33f76b52bdb"
-			});
-		});
-	</script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>zzImgUr | devs.forumvi.com/</title>
+    <meta name="author" content="zzbaivong" />
+    <link rel="stylesheet" href="./source/zzImgUr.min.css" type="text/css" media="screen" />
+    <style>
+        body > * {
+        			width: 700px;
+        			margin: 0 auto;
+        		}
+        		#wrapper > div {
+        			width: 50%;
+        			float: left;
+        		}
+        		.test > textarea {
+        			border: 1px solid #333;
+        			margin: 0;
+        			width: 100%;
+        			min-height: 150px;
+        			resize: vertical;
+        		}
+        		#wrapper: after {
+        			content: ".";
+        			display: block;
+        			clear: both;
+        		}
+        		header,
+        		footer {
+        			text-align: center;
+        		}
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./source/zzImgUr.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $(".zzImgUr").zzImgUr({
+                cliendID: "661e33f76b52bdb",
+                success: function(firstVal, arrVal) {
+                    $("textarea").val($("textarea").val() + firstVal);
+                },
+                input: function(arrInput) {
+                    arrInput.click(function() {
+                        this.select();
+                    });
+                },
+                remove: function(firstVal, arrVal) {
+                    $("textarea").val($("textarea").val().replace(firstVal, ""));
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
-	<header>
-		<h1>jQuery plugin zzImgUr</h1>
-	</header>
+    <header>
+        <h1>jQuery plugin zzImgUr</h1>
+    </header>
 
-	<section id="wrapper">
-		<div class="zzImgUr"></div>
+    <section id="wrapper">
+        <div class="zzImgUr"></div>
 
-		<div class="test">
-			<textarea></textarea>
-		</div>
-	</section>
+        <div class="test">
+            <textarea></textarea>
+        </div>
+    </section>
 
-	<footer>
-		<a href="http://devs.forumvi.com/">
-			DEVs.forumvi.com
-		</a>
-	</footer>
+    <footer>
+        <a href="http://devs.forumvi.com/">
+            DEVs.forumvi.com
+        </a>
+    </footer>
 </body>
 
 </html>
