@@ -22,11 +22,11 @@
 .imgur_Zzbv-mode{cursor:pointer;width:30px;height:30px;float:left;background:url(http://i.imgur.com/QR7NC4t.png) no-repeat center center #FF475D}
 .imgur_Zzbv-mode.imgur_Zzbv-zzURL{background-image:url(http://i.imgur.com/NYMERyB.png);background-color:#0B704C}
 .imgur_Zzbv-status{position:absolute;width:16px;height:16px;line-height:16px;left:5px;top:7px;display:none}
-.imgur_Zzbv-add{cursor:pointer;position:relative;width:110px;height:30px;overflow:hidden;background:orange;border:0}
+.imgur_Zzbv-add{cursor:pointer;position:relative;width:100px;height:30px;overflow:hidden;background:orange;border:0}
 .imgur_Zzbv-upload-URL.imgur_Zzbv-add{background:#C100E6}
 .imgur_Zzbv-upload-URL{display:none}
-.imgur_Zzbv-iconSelect{background:url(http://i.imgur.com/6LPQMtN.png) no-repeat center transparent;width:30px;height:30px;position:absolute;left:5px;top:0}
-.imgur_Zzbv-textSelect{position:absolute;width:100%;padding-left:40px;height:30px;line-height:30px}
+.imgur_Zzbv-iconSelect{background:url(http://i.imgur.com/wZNkT5b.png) no-repeat center transparent;width:30px;height:30px;position:absolute;left:0;top:0}
+.imgur_Zzbv-textSelect{position:absolute;width:100%;padding-left:30px;height:30px;line-height:30px}
 .imgur_Zzbv-choose{cursor:pointer;z-index:10;opacity:0;filter:alpha(opacity=0);-moz-opacity:0;font-size:300px;height:1000px;right:0;top:0;position:absolute}
 .imgur_Zzbv-length{position:absolute;width:50px;text-align:center;top:0;left:50%;margin-left:-25px;display:none}
 .imgur_Zzbv-button{position:absolute;right:0;top:0;z-index:10}
