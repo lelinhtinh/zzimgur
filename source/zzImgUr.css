@@ -174,7 +174,7 @@
 }
 .imgur_Zzbv input.imgur_Zzbv-input {
     width: calc(100% - 84px)!important;
-    margin: 0!important;
+    margin: 8px 0!important;
     padding: 0!important;
     height: 16px!important;
     line-height: 16px!important;
@@ -209,7 +209,7 @@
 .imgur_Zzbv-textSelect {
     position: absolute;
     width: 100%;
-    padding-left: 30px;
+    left: 30px;
     height: 30px;
     line-height: 30px;
 }
