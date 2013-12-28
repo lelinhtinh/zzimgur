@@ -1,17 +1,25 @@
-
-/* 
- * jQuery plugin zzImgUr ver 1.5 by zzbaivong
+/*
+ * jQuery plugin zzImgUr ver 1.6 by zzbaivong
  * http://devs.forumvi.com/ 
  */
 .imgur_Zzbv,.imgur_Zzbv *{box-sizing:content-box;-moz-boxsizing:content-box;-webkit-box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;margin:0;padding:0}
 .imgur_Zzbv input{-webkit-user-select:initial;-moz-user-select:initial;-ms-user-select:initial;user-select:initial}
 .imgur_Zzbv{border:1px solid #333;background:#FFF;height:auto}
-.imgur_Zzbv-mode{cursor:pointer;width:30px;height:30px;float:left;background:url(http://i.imgur.com/QR7NC4t.png) no-repeat center center #FF475D}
-.imgur_Zzbv-mode.imgur_Zzbv-zzURL{background-image:url(http://i.imgur.com/NYMERyB.png);background-color:#0B704C}
-.imgur_Zzbv-iconSelect{background:url(http://i.imgur.com/wZNkT5b.png) no-repeat center transparent;width:30px;height:30px;position:absolute;left:0;top:0}
-.imgur_Zzbv-button div{cursor:pointer;background:url(http://i.imgur.com/voNJFfV.png) no-repeat 10px center #359BED;border:0;height:30px;display:none;padding:0 10px 0 35px}
-.imgur_Zzbv-button .imgur_Zzbv-reset{background-image:url(http://i.imgur.com/RhNzFuh.png);background-color:#01686D}
-.imgur_Zzbv-delete,.imgur_Zzbv-remove{position:absolute;right:3px;top:3px;height:16px;width:16px;text-indent:-9999px;overflow:hidden;background:url(http://i.imgur.com/FcXb2vi.png) no-repeat center transparent}
+.imgur_Zzbv-iconError,.imgur_Zzbv-iconDevs,.imgur_Zzbv-delete,.imgur_Zzbv-remove,.imgur_Zzbv-iconSelect,.imgur_Zzbv-button div img,.imgur_Zzbv-iconComplete,.imgur_Zzbv-iconImage{display:inline-block;background:url(./images/sprite.png) no-repeat center center;width:16px;height:16px;float:left;margin:7px}
+.imgur_Zzbv-iconDevs{background-position:0 0}
+.imgur_Zzbv-iconComplete{background-position:-32px -16px}
+.imgur_Zzbv-status img{margin:0}
+.imgur_Zzbv-iconError{background-position:0 -32px}
+.imgur_Zzbv-iconSelect{background-position:0 -16px}
+.imgur_Zzbv-iconUpload{background-position:-16px -16px}
+.imgur_Zzbv-iconReset{background-position:-16px 0}
+.imgur_Zzbv-iconImage{background-position:-16px -32px}
+.imgur_Zzbv-iconImage.imgur_Zzbv-iconUrl{background-position:-32px -32px}
+.imgur_Zzbv-mode{cursor:pointer;width:30px;height:30px;float:left;background-color:#FF475D}
+.imgur_Zzbv-mode.imgur_Zzbv-zzURL{background-color:#0B704C}
+.imgur_Zzbv-button div{cursor:pointer;background-color:#359BED;border:0;height:30px;display:none;padding:0 10px 0 0}
+.imgur_Zzbv-button .imgur_Zzbv-reset{background-color:#01686D}
+.imgur_Zzbv-delete,.imgur_Zzbv-remove{background-position:-32px 0;position:absolute;right:3px;top:3px;height:16px;width:16px;text-indent:-9999px;overflow:hidden;background-color:transparent;margin:0}
 .imgur_Zzbv-control{position:relative;height:30px;line-height:30px;overflow:hidden;background:#333;color:#FFF}
 .imgur_Zzbv-preview{overflow-y:auto;overflow-x:hidden}
 .imgur_Zzbv-li{background:#f2f2f2;list-style-type:none;position:relative;height:68px;border-top:1px solid #DDD;overflow:hidden}
@@ -36,9 +44,9 @@
 .imgur_Zzbv-length{position:absolute;width:50px;text-align:center;top:0;left:50%;margin-left:-25px;display:none}
 .imgur_Zzbv-button{position:absolute;right:0;top:0;z-index:10}
 .imgur_Zzbv-mode:hover,.imgur_Zzbv-button div:hover,.imgur_Zzbv-add:hover{background-color:#666}
-.imgur_Zzbv-devs-icon{position:absolute;right:5px;top:7px;line-height:16px}
+.imgur_Zzbv-devs-icon{position:absolute;right:0;top:0;line-height:16px}
 .imgur_Zzbv-tip{height:24px;font-size:13px;font-style:italic;line-height:26px}
-.imgur_Zzbv-tip img{vertical-align:middle;margin-top:-2px}
+.imgur_Zzbv-tip img{vertical-align:middle;float:none;margin:-4px 0 0}
 .imgur_Zzbv-wrap-progress{background:#FFF;height:3px;border:0;position:absolute;bottom:0;left:-100px;right:0}
 .imgur_Zzbv-progress{height:3px;background:red;width:1px}
 .imgur_Zzbv-errorURL{color:red}
