@@ -12,7 +12,7 @@
 .imgur_Zzbv-iconError{background-position:0 -32px}
 .imgur_Zzbv-iconSelect{background-position:0 -16px}
 .imgur_Zzbv-iconUpload{background-position:-16px -16px}
-.imgur_Zzbv-iconReset{background-position:-16px 0}
+.imgur_Zzbv-button div img.imgur_Zzbv-iconReset{background-position:-16px 0}
 .imgur_Zzbv-iconImage{background-position:-16px -32px}
 .imgur_Zzbv-iconImage.imgur_Zzbv-iconUrl{background-position:-32px -32px}
 .imgur_Zzbv-mode{cursor:pointer;width:30px;height:30px;float:left;background-color:#FF475D}
