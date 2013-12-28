@@ -33,16 +33,15 @@
 .imgur_Zzbv-info > *{white-space:nowrap}
 .imgur_Zzbv-dl{line-height:34px}
 .imgur_Zzbv-dl > div{height:34px}
-.imgur_Zzbv-dt{float:left;width:90px;font-weight:300;font-size:12px}
-.imgur_Zzbv input.imgur_Zzbv-input{width:calc(100% - 100px)!important;height:16px!important;line-height:16px!important;margin:0!important;padding:0!important}
+.imgur_Zzbv-dt{float:left;width:70px;font-weight:300;font-size:12px}
+.imgur_Zzbv input.imgur_Zzbv-input{width:calc(100% - 84px)!important;height:16px!important;line-height:16px!important;margin:0!important;padding:0!important}
 .imgur_Zzbv-status{position:absolute;width:16px;height:16px;line-height:16px;left:5px;top:7px;display:none}
-.imgur_Zzbv-add{cursor:pointer;position:relative;width:100px;height:30px;overflow:hidden;background:orange;border:0}
+.imgur_Zzbv-add{cursor:pointer;position:absolute;width:100px;height:30px;overflow:hidden;background:orange;left:30px;top:0;z-index:10}
 .imgur_Zzbv-upload-URL.imgur_Zzbv-add{background:#C100E6}
-.imgur_Zzbv-upload-URL{display:none}
 .imgur_Zzbv-textSelect{position:absolute;width:100%;padding-left:30px;height:30px;line-height:30px}
 .imgur_Zzbv-choose{cursor:pointer;z-index:10;opacity:0;filter:alpha(opacity=0);-moz-opacity:0;font-size:300px;height:1000px;right:0;top:0;position:absolute}
 .imgur_Zzbv-length{position:absolute;width:50px;text-align:center;top:0;left:50%;margin-left:-25px;display:none}
-.imgur_Zzbv-button{position:absolute;right:0;top:0;z-index:10}
+.imgur_Zzbv-button{position:absolute;width:90px;right:0;top:0;white-space:nowrap;z-index:10}
 .imgur_Zzbv-mode:hover,.imgur_Zzbv-button div:hover,.imgur_Zzbv-add:hover{background-color:#666}
 .imgur_Zzbv-devs-icon{position:absolute;right:0;top:0;line-height:16px}
 .imgur_Zzbv-tip{height:24px;font-size:13px;font-style:italic;line-height:26px}
@@ -51,3 +50,7 @@
 .imgur_Zzbv-progress{height:3px;background:red;width:1px}
 .imgur_Zzbv-errorURL{color:red}
 .imgur_Zzbv input.imgur_Zzbv-imageURL{width:calc(100% - 11px)!important;border:0 none!important;box-shadow:0 0 0 1px #DDD!important;height:16px!important;line-height:16px!important;margin:0 0 0 1px !important}
+.imgur_Zzbv-mini .imgur_Zzbv-button,.imgur_Zzbv-mini .imgur_Zzbv-add{width:30px}
+.imgur_Zzbv-mini .imgur_Zzbv-info{left:10px}
+.imgur_Zzbv-mini .imgur_Zzbv-wrap-progress{left:-10px}
+.imgur_Zzbv-upload-URL,.imgur_Zzbv-mini .imgur_Zzbv-image{display:none}
