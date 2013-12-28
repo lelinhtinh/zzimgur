@@ -1,8 +1,7 @@
-/*! 
+/*
  * jQuery plugin zzImgUr ver 1.6 by zzbaivong
  * http://devs.forumvi.com/ 
  */
-
 .imgur_Zzbv,
 .imgur_Zzbv * {
     margin: 0;
@@ -169,12 +168,12 @@
 }
 .imgur_Zzbv-dt {
     float: left;
-    width: 90px;
+    width: 70px;
     font-weight: 300;
     font-size: 12px;
 }
 .imgur_Zzbv input.imgur_Zzbv-input {
-    width: calc(100% - 100px)!important;
+    width: calc(100% - 84px)!important;
     margin: 0!important;
     padding: 0!important;
     height: 16px!important;
@@ -185,18 +184,21 @@
     width: 16px;
     height: 16px;
     line-height: 16px;
+    line-height: 16px;
     left: 5px;
     top: 7px;
     display: none
 }
 .imgur_Zzbv-add {
     cursor: pointer;
-    position: relative;
+    position: absolute;
     width: 100px;
     height: 30px;
     overflow: hidden;
     background: orange;
-    border: 0;
+    left: 30px;
+    top: 0;
+    z-index: 10;
 }
 .imgur_Zzbv-upload-URL.imgur_Zzbv-add {
     background: #C100E6;
@@ -234,8 +236,10 @@
 }
 .imgur_Zzbv-button {
     position: absolute;
+    width: 90px;
     right: 0;
     top: 0;
+    white-space: nowrap;
     z-index: 10;
 }
 .imgur_Zzbv-mode:hover,
@@ -284,4 +288,17 @@
     margin: 0 0 0 1px!important;
     height: 16px!important;
     line-height: 16px!important;
+}
+.imgur_Zzbv-mini .imgur_Zzbv-button,
+.imgur_Zzbv-mini .imgur_Zzbv-add {
+    width: 30px;
+}
+.imgur_Zzbv-mini .imgur_Zzbv-image {
+    display: none;
+}
+.imgur_Zzbv-mini .imgur_Zzbv-info {
+    left: 10px;
+}
+.imgur_Zzbv-mini .imgur_Zzbv-wrap-progress {
+    left: -10px;
 }
