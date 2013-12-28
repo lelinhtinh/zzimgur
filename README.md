@@ -1,13 +1,13 @@
 zzimgur
 =======
-Upload images from ImgUr use HTML5 and Javascript
+Upload images use the Imgur API and HTML5
 
 ###Update
-Version 1.5 (12/27/2013)
+Version 1.6 (12/28/2013)
 
 
 ##Guide
-<http://devs.forumvi.com/t131-jq-plugin-jquery-plugin-zzimgur>
+<http://goo.gl/nExWs4>
 
 ##Demo
-<http://dl.dropboxusercontent.com/u/126946313/zzImgUr/demo.html>
+<http://goo.gl/mjYR0f>
