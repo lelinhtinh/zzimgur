@@ -1,3 +1,4 @@
+
 /* 
  * jQuery plugin zzImgUr ver 1.5 by zzbaivong
  * http://devs.forumvi.com/ 
@@ -8,7 +9,7 @@
 .imgur_Zzbv-mode{cursor:pointer;width:30px;height:30px;float:left;background:url(http://i.imgur.com/QR7NC4t.png) no-repeat center center #FF475D}
 .imgur_Zzbv-mode.imgur_Zzbv-zzURL{background-image:url(http://i.imgur.com/NYMERyB.png);background-color:#0B704C}
 .imgur_Zzbv-iconSelect{background:url(http://i.imgur.com/wZNkT5b.png) no-repeat center transparent;width:30px;height:30px;position:absolute;left:0;top:0}
-.imgur_Zzbv-button div{cursor:pointer;background:url(http://i.imgur.com/voNJFfV.png) no-repeat 10px center #359BED;border:0;height:30px;display:none;padding:0 10px 0 35px!important}
+.imgur_Zzbv-button div{cursor:pointer;background:url(http://i.imgur.com/voNJFfV.png) no-repeat 10px center #359BED;border:0;height:30px;display:none;padding:0 10px 0 35px}
 .imgur_Zzbv-button .imgur_Zzbv-reset{background-image:url(http://i.imgur.com/RhNzFuh.png);background-color:#01686D}
 .imgur_Zzbv-delete,.imgur_Zzbv-remove{position:absolute;right:3px;top:3px;height:16px;width:16px;text-indent:-9999px;overflow:hidden;background:url(http://i.imgur.com/FcXb2vi.png) no-repeat center transparent}
 .imgur_Zzbv-control{position:relative;height:30px;line-height:30px;overflow:hidden;background:#333;color:#FFF}
@@ -21,15 +22,16 @@
 .imgur_Zzbv-image{width:100px;overflow:hidden;position:absolute;height:100%}
 .imgur_Zzbv-image img{max-width:100%;max-height:100%;position:absolute;top:0;right:0;bottom:0;left:0;margin:auto}
 .imgur_Zzbv-info{position:absolute;left:100px;top:0;right:0;height:100%}
+.imgur_Zzbv-info > *{white-space:nowrap}
 .imgur_Zzbv-dl{line-height:34px}
 .imgur_Zzbv-dl > div{height:34px}
 .imgur_Zzbv-dt{float:left;width:90px;font-weight:300;font-size:12px}
-.imgur_Zzbv input.imgur_Zzbv-input{width:calc(100% - 100px)!important;height:16px!important;line-height:16px!important;margin:8px 0!important;padding:0!important}
+.imgur_Zzbv input.imgur_Zzbv-input{width:calc(100% - 100px)!important;height:16px!important;line-height:16px!important;margin:0!important;padding:0!important}
 .imgur_Zzbv-status{position:absolute;width:16px;height:16px;line-height:16px;left:5px;top:7px;display:none}
 .imgur_Zzbv-add{cursor:pointer;position:relative;width:100px;height:30px;overflow:hidden;background:orange;border:0}
 .imgur_Zzbv-upload-URL.imgur_Zzbv-add{background:#C100E6}
 .imgur_Zzbv-upload-URL{display:none}
-.imgur_Zzbv-textSelect{position:absolute;width:100%;padding-left:30px!important;height:30px;line-height:30px}
+.imgur_Zzbv-textSelect{position:absolute;width:100%;padding-left:30px;height:30px;line-height:30px}
 .imgur_Zzbv-choose{cursor:pointer;z-index:10;opacity:0;filter:alpha(opacity=0);-moz-opacity:0;font-size:300px;height:1000px;right:0;top:0;position:absolute}
 .imgur_Zzbv-length{position:absolute;width:50px;text-align:center;top:0;left:50%;margin-left:-25px;display:none}
 .imgur_Zzbv-button{position:absolute;right:0;top:0;z-index:10}
