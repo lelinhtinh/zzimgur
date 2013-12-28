@@ -2,7 +2,6 @@
  * jQuery plugin zzImgUr ver 1.6 by zzbaivong
  * http://devs.forumvi.com/
  */
-
 (function ($) {
     "use strict";
     $.fn.zzImgUr = function (options) {
@@ -45,12 +44,11 @@
                 maxChoose = '';
             }
             $(this, obj).html('<div class="imgur_Zzbv"> <div class="imgur_Zzbv-control"> <div class="imgur_Zzbv-mode">' + icon('Image') + '</div> <div class="imgur_Zzbv-status"> <img src="' + settings.loading + '" alt="loading..." /> </div> <div class="imgur_Zzbv-upload-computer imgur_Zzbv-add"> ' + icon('Select') + ' <div class="imgur_Zzbv-textSelect">' + settings.lang.addImage + '</div> <input type="file" class="imgur_Zzbv-choose" ' + maxChoose + ' /> </div> <div class="imgur_Zzbv-upload-URL imgur_Zzbv-add"> <div class="imgur_Zzbv-iconSelect"></div> <div class="imgur_Zzbv-textSelect">' + settings.lang.addURL + '</div> </div> <div class="imgur_Zzbv-length"> <span class="imgur_Zzbv-complete">0</span> / <span class="imgur_Zzbv-selected">0</span> </div> <div class="imgur_Zzbv-button"> <div class="imgur_Zzbv-reset">' + icon('Reset') + settings.lang.reset + '</div> <div class="imgur_Zzbv-upload">' + icon('Upload') + settings.lang.upload + '</div> </div> <a class="imgur_Zzbv-devs-icon" target="_blank" href="http://devs.forumvi.com/"> ' + icon('Devs') + ' </a> </div> <div class="imgur_Zzbv-preview"> <div class="imgur_Zzbv-list"></div> </div> </div>');
-            $(".imgur_Zzbv", obj).css(settings.css);
-            var control = $(".imgur_Zzbv-control", obj),
+            var zzbv = $(".imgur_Zzbv", obj),
+                control = $(".imgur_Zzbv-control", obj),
                 mode = $(".imgur_Zzbv-mode", obj),
                 status = $(".imgur_Zzbv-status", obj),
                 computer = $(".imgur_Zzbv-upload-computer", obj),
-                choose = $(".imgur_Zzbv-choose", obj),
                 url = $(".imgur_Zzbv-upload-URL", obj),
                 add = $(".imgur_Zzbv-add", obj),
                 length = $(".imgur_Zzbv-length", obj),
@@ -60,7 +58,12 @@
                 upload = $(".imgur_Zzbv-upload", obj),
                 list = $(".imgur_Zzbv-list", obj),
                 li_length = (settings.format).split(",").length;
-
+            
+            zzbv.css(settings.css);
+            mini();
+            $(window).resize(function(){
+                mini();
+            });
             if (!/[a-z0-9]{15}/.test(settings.cliendID)) {
                 control.html('<div class="imgur_Zzbv-status" style="display: block;"> ' + icon('Error') + ' </div><div style="text-align: center;">' + settings.lang.noID + ': <span style="color: red;">cliendID</span><a class="imgur_Zzbv-devs-icon" target="_blank" href="http://devs.forumvi.com/"> ' + icon('Devs') + ' </a></div>');
                 return false;
@@ -121,9 +124,12 @@
                 if (progress == "0") {
                     reset.click();
                 }
-                reChoose();
-                if ($(".imgur_Zzbv-imageURL", obj).length < 10) {
-                    url.fadeIn();
+                if (mode.hasClass("imgur_Zzbv-zzURL")) {
+                    if ($(".imgur_Zzbv-imageURL", obj).length < 10) {
+                        url.fadeIn();
+                    }
+                } else {
+                    reChoose();
                 }
             });
             url.click(function () {
@@ -315,7 +321,7 @@
                 if ((null === format) || ("" === format)) {
                     bbcode = link;
                 } else if (format === "o") {
-                    bbcode = "["+img+"]" + link + "[/"+img+"]";
+                    bbcode = "[" + img + "]" + link + "[/" + img + "]";
                 } else {
                     bbcode = "[" + url + "=" + link + "][" + img + "]http://i.imgur.com/" + json.data.id + format + "." + json.data.type.split("/")[1] + "[/" + img + "][/" + url + "]";
                 }
@@ -390,7 +396,15 @@
             }
 
             function reChoose() {
-                choose.replaceWith(choose.clone());
+                $(".imgur_Zzbv-choose", obj).replaceWith($(".imgur_Zzbv-choose", obj).clone());
+            }
+
+            function mini() {
+                if (zzbv.width() < 220) {
+                    zzbv.addClass("imgur_Zzbv-mini");
+                } else {
+                    zzbv.removeClass("imgur_Zzbv-mini");
+                }
             }
         });
     };
