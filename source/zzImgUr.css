@@ -141,6 +141,10 @@
     height: 100%
 }
 
+.imgur_Zzbv-info > * {
+    white-space: nowrap
+}
+
 .imgur_Zzbv-dl {
     line-height: 34px
 }
