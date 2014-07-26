@@ -11,6 +11,3 @@ Version 1.6 (12/28/2013)
 
 ##Demo
 <http://goo.gl/mjYR0f>
-
-##GitHub Pages
-<http://baivong.github.io/zzimgur/>
